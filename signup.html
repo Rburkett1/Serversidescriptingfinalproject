@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign up</title>  
+    <link rel="stylesheet" href="styles/styles.css">  
+</head>
+<body>
+    <div class="container">
+    <h1 class = "head">Create Account</h1>   
+    <form action="signup.php" method="POST">
+        <!--General user infomation, not for login-->
+        <label>Full Name</label><br>
+        <input type="text"  name="Name"><br>        
+        <label>Email</label><br>
+        <input type="email"  name="Email"  placeholder="must have @ symbol bro"><br>
+        <!-- pattern="/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/" -->
+        <label>Phone Number</label><br>
+        <input type="tel"  name="Pnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx"><br>
+        <!--User info stored login infomation-->
+        <label>Username</label><br>
+        <input type="text"  name="Username"><br>       
+        <label>Password</label><br>
+        <input type="password"  name="Password"><br>
+        <h5>Already have an account? <a class ="signupLink" href="login.html">Login here</a></h5>
+        <button type="submit">Sign Up</button><br><br>
+    </form>
+    <button><a href = "index.html">Back</a></button>       
+    </div>
+    
+</body>
+</html>
